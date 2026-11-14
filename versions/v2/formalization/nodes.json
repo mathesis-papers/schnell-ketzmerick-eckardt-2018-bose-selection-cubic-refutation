@@ -1,0 +1,209 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "6ffa76e4424ce4c0d1048e56afb0724762ed8285",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean"
+      },
+      "lineage": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:s1",
+      "macros": {
+        "\\Pf": "\\operatorname{Pf}",
+        "\\R": "\\mathbb R",
+        "\\sgn": "\\operatorname{sgn}"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
+      "scope": "in_scope",
+      "statement": "For $M=5$, $d=3$, and\n\\begin{equation}\n \\varepsilon=(1,2,3,4,5),\\qquad\n f=\\frac1{21}(5,4,4,4,4),\\qquad\n g=\\frac1{21}(6,6,3,3,3),\n\\end{equation}\nthe unique selected set is $S=\\{1,2,3,4,5\\}$, and its unique\nnormalized occupation vector is\n\\begin{equation}\n \\eta=\\frac1{100}(14,56,21,8,1).\n\\end{equation}\nThere is a nonempty open set of ordered energies and positive\ncoupling parameters with this same five-mode selection.\nThus $M_S=5>3=2M_B-1$ for $M_B=2$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound",
+      "toolchain": null,
+      "version": 2,
+      "work": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:2:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6ffa76e4424ce4c0d1048e56afb0724762ed8285",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean"
+      },
+      "lineage": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:s2",
+      "macros": {
+        "\\Pf": "\\operatorname{Pf}",
+        "\\R": "\\mathbb R",
+        "\\sgn": "\\operatorname{sgn}"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
+      "scope": "in_scope",
+      "statement": "There is an open interval of exponents containing $3$ for\nwhich the parameters in~\\eqref{eq:parameters} have a unique\nfive-mode selection. More generally, five-mode selection\nholds in a neighborhood of the displayed point in the joint\nspace $(d,\\varepsilon,F,G)$, with $d>0$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound",
+      "toolchain": null,
+      "version": 2,
+      "work": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6ffa76e4424ce4c0d1048e56afb0724762ed8285",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean"
+      },
+      "lineage": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:s3",
+      "macros": {
+        "\\Pf": "\\operatorname{Pf}",
+        "\\R": "\\mathbb R",
+        "\\sgn": "\\operatorname{sgn}"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
+      "scope": "in_scope",
+      "statement": "For every finite $M\\geq5$, two cubic product-coupled baths\nadmit a nonempty open set of positive coupling weights and\nordered energies with exactly five selected modes and a unique\nnormalized selection vector.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound",
+      "toolchain": null,
+      "version": 2,
+      "work": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:2:s4",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "6ffa76e4424ce4c0d1048e56afb0724762ed8285",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean"
+      },
+      "lineage": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:s4",
+      "macros": {
+        "\\Pf": "\\operatorname{Pf}",
+        "\\R": "\\mathbb R",
+        "\\sgn": "\\operatorname{sgn}"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
+      "scope": "in_scope",
+      "statement": "For odd $q\\geq1$, every nondegenerate selected set for\n\\eqref{eq:many} satisfies\n\\[\n M_S\\leq(q+1)M_B-1.\n\\]\nFor $q=1$ this recovers the Ohmic bound of Schnell, Ketzmerick\nand Eckardt~\\cite[Sec.\\ V, Eqs.\\ (51)--(54)]{ske}.\nFor two cubic baths it gives $M_S\\leq7$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound",
+      "toolchain": null,
+      "version": 2,
+      "work": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "6ffa76e4424ce4c0d1048e56afb0724762ed8285",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean"
+      },
+      "lineage": "collected:schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation:s5",
+      "macros": {
+        "\\Pf": "\\operatorname{Pf}",
+        "\\R": "\\mathbb R",
+        "\\sgn": "\\operatorname{sgn}"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
+      "scope": "in_scope",
+      "statement": "Suppose the energies are strictly ordered, $d>0$, all couplings\nare positive, and all baths have the same spectral sign in\n\\eqref{eq:many}, with $(\\varepsilon_j-\\varepsilon_i)^q$\nreplaced by $J_d(\\varepsilon_j-\\varepsilon_i)$.\nThen precisely one mode is selected: the lowest energy for\npositive signs and the highest for negative signs.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound",
+      "toolchain": null,
+      "version": 2,
+      "work": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation"
+    }
+  ]
+}

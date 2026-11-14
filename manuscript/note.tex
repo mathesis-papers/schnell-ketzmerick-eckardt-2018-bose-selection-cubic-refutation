@@ -1,0 +1,438 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=26mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array,longtable}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\R}{\mathbb R}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Pf}{\operatorname{Pf}}
+\title{A cubic counterexample at Schnell--Ketzmerick--Eckardt\
+(2018, Sec.\ V, p.\ 11, Eq.\ (55)),\
+and an extension of their Ohmic bound}
+\author{Haobo Ma$^{1}$ \and Wenlin Zhang$^{2,1}$}
+\date{5 November 2026\\[3pt]
+\small $^1$ChronoAI Pte Ltd, Singapore\\
+\small $^2$National University of Singapore}
+\begin{document}
+\maketitle
+\begin{abstract}
+For the non-Ohmic expectation $M_S\leq 2M_B-1$ of
+Schnell, Ketzmerick and Eckardt (2018, arXiv:1802.04088v2,
+Sec.\ V, p.\ 11, Eq.\ (55) and the surrounding paragraph),
+we give a cubic counterexample and extend their Ohmic bound
+to odd monomial spectra.
+Two baths with $J(x)=x^3$ have five Bose-selected modes.
+The normalized coupling weights are $(5,4,4,4,4)/21$ and
+$(6,6,3,3,3)/21$ at energies $(1,2,3,4,5)$, and the selected
+occupation fractions are $(14,56,21,8,1)/100$.
+Positive signed Pfaffian minors show that this selection is unique
+and persists on an open set of parameters, including spectral
+exponents near three. Five selected modes persist after adding
+any finite number of sufficiently weakly coupled higher levels.
+For odd $q$, we prove $M_S\leq(q+1)M_B-1$ when $J(x)=x^q$
+and the selected principal matrix has a one-dimensional kernel;
+$q=1$ recovers the source's Ohmic bound, while $q=3$ gives seven
+as an upper bound for two baths under this hypothesis.
+\end{abstract}
+
+\section{The expectation and the selection condition}
+For two product-coupled reservoirs, Schnell, Ketzmerick and
+Eckardt~\cite[Sec.\ V, Eq.\ (50)]{ske} use the rate-asymmetry matrix
+\begin{equation}\label{eq:matrix}
+ A^{(d)}_{ij}=J_d(\varepsilon_j-\varepsilon_i)(f_i f_j-g_i g_j),
+ \qquad J_d(x)=|x|^d\sgn(x),\quad J_d(0)=0,
+\end{equation}
+where $d>0$, $f_i,g_i>0$, and $\sum_i f_i=\sum_i g_i=1$.
+A common positive prefactor, such as $2\pi/\hbar$, does not
+change selection and is suppressed. These weights correspond to
+unit vectors $|f\rangle=\sum_i\sqrt{f_i}|i\rangle$ and
+$|g\rangle=\sum_i\sqrt{g_i}|i\rangle$, so their rank-one
+projectors have exactly the coupling form in the source.
+
+A nonempty set $S\subseteq\{1,\ldots,M\}$ is selected if there
+is a vector $\eta$ satisfying
+\begin{equation}\label{eq:selection}
+ (A\eta)_i=0,\ \eta_i>0\quad(i\in S),\qquad
+ (A\eta)_i<0,\ \eta_i=0\quad(i\notin S).
+\end{equation}
+This is Eq.\ (11) of~\cite{ske}; we fix its arbitrary scale by
+$\sum_i\eta_i=1$. Write $M_S=|S|$ and let $M_B$ count the baths.
+For Ohmic spectra ($d=1$), the source gives a generic linear
+independence argument for $M_S\leq2M_B-1$. Immediately around
+Eq.\ (55), p.\ 11, it says ``We expect that there is a generalization''
+to non-Ohmic spectra and, after that equation, says ``similarly
+observe $M_S\leq2M_B-1$'' for $J_d$.
+Our counterexample answers the proposed extension negatively;
+it does not change what occurred in that finite numerical sample.
+The expectation is repeated in Schnell's thesis,
+Sec.\ 4.4, p.\ 80, Eq.\ (4.54)~\cite{schnell}.
+Our example concerns this non-Ohmic extrapolation.
+
+The signed-Pfaffian description of kernels of odd antisymmetric
+matrices is standard in this setting; see
+Knebel, Weber, Kr\"uger and Frey~\cite[Methods, Eq.\ (19)]{knebel}.
+Geiger, Knebel and Frey~\cite[Sec.\ 2.2]{geiger} relate positive
+kernels to coexistence in antisymmetric Lotka--Volterra systems.
+Here we give the five-dimensional identity explicitly, so the
+counterexample requires only finite arithmetic and continuity.
+Later work by Petiziol and Eckardt~\cite[Eq.\ (6), Fig.\ 3]{petiziol}
+engineers five selected modes using frequency-selective artificial
+reservoirs. Its Lorentzian spectra differ from the two cubic
+product-coupled reservoirs considered here.
+
+\section{An exact five-mode example}
+\begin{theorem}\label{thm:example}
+For $M=5$, $d=3$, and
+\begin{equation}\label{eq:parameters}
+ \varepsilon=(1,2,3,4,5),\qquad
+ f=\frac1{21}(5,4,4,4,4),\qquad
+ g=\frac1{21}(6,6,3,3,3),
+\end{equation}
+the unique selected set is $S=\{1,2,3,4,5\}$, and its unique
+normalized occupation vector is
+\begin{equation}\label{eq:occupation}
+ \eta=\frac1{100}(14,56,21,8,1).
+\end{equation}
+There is a nonempty open set of ordered energies and positive
+coupling parameters with this same five-mode selection.
+Thus $M_S=5>3=2M_B-1$ for $M_B=2$.
+\end{theorem}
+
+\begin{proof}
+Since $J_3(x)=x^3$, substitution into~\eqref{eq:matrix} gives
+$A=B/441$, where
+\begin{equation}\label{eq:integer}
+ B=\begin{pmatrix}
+ 0&-16&16&54&128\\
+ 16&0&-2&-16&-54\\
+ -16&2&0&7&56\\
+ -54&16&-7&0&7\\
+ -128&54&-56&-7&0
+ \end{pmatrix}.
+\end{equation}
+For example, $B_{14}=3^3(5\cdot4-6\cdot3)=54$.
+The matrix is skew-symmetric, and direct multiplication yields
+\begin{equation}\label{eq:finite}
+ B(14,56,21,8,1)^{\mathsf T}=0.
+\end{equation}
+All entries of~\eqref{eq:occupation} are positive and sum to one.
+For the full selected set there are no unselected inequalities
+to check in~\eqref{eq:selection}.
+
+To establish stability and rank, let $a$ be any skew-symmetric
+$5\times5$ matrix and define its signed Pfaffian vector by
+\begin{equation}\label{eq:pfaffian}
+ p(a)=\begin{pmatrix}
+ a_{23}a_{45}-a_{24}a_{35}+a_{25}a_{34}\\
+ -(a_{13}a_{45}-a_{14}a_{35}+a_{15}a_{34})\\
+ a_{12}a_{45}-a_{14}a_{25}+a_{15}a_{24}\\
+ -(a_{12}a_{35}-a_{13}a_{25}+a_{15}a_{23})\\
+ a_{12}a_{34}-a_{13}a_{24}+a_{14}a_{23}
+ \end{pmatrix}.
+\end{equation}
+Then $ap(a)=0$. For its first coordinate, expanding
+\begin{align*}
+ &-a_{12}(a_{13}a_{45}-a_{14}a_{35}+a_{15}a_{34})\\
+ &\quad+a_{13}(a_{12}a_{45}-a_{14}a_{25}+a_{15}a_{24})\\
+ &\quad-a_{14}(a_{12}a_{35}-a_{13}a_{25}+a_{15}a_{23})\\
+ &\quad+a_{15}(a_{12}a_{34}-a_{13}a_{24}+a_{14}a_{23})
+ \end{align*}
+gives zero by pairwise cancellation. Relabeling the indices
+gives the other four identities. At~\eqref{eq:integer},
+\begin{equation}\label{eq:pvalue}
+ p(B)=(504,2016,756,288,36)^{\mathsf T}
+     =36(14,56,21,8,1)^{\mathsf T}>0.
+\end{equation}
+The principal minor obtained by deleting the first row and
+column has determinant $504^2=254016$, so $B$ has rank at
+least four. Every odd-dimensional skew-symmetric real matrix
+has zero determinant, since $\det(a)=\det(-a^{\mathsf T})=-\det(a)$.
+Consequently $\operatorname{rank}B=4$, and its kernel is one-dimensional.
+
+For the open-set assertion, parametrize the coupling weights by
+arbitrary positive $F,G\in\R^5$ through
+\begin{equation}\label{eq:normalize}
+ f_i=F_i/\textstyle\sum_j F_j,\qquad
+ g_i=G_i/\textstyle\sum_j G_j.
+\end{equation}
+On the open domain of positive $F,G$ and strictly ordered
+energies, the entries of $A^{(3)}$ and $p(A^{(3)})$ are continuous.
+At the energies in~\eqref{eq:parameters}, take $F=(5,4,4,4,4)$
+and $G=(6,6,3,3,3)$.
+Then~\eqref{eq:pvalue} gives $p(A^{(3)})=p(B)/441^2>0$.
+The intersection of the five inverse images of $(0,\infty)$
+under these coordinates is therefore an open neighborhood of
+this point. Throughout it,
+$\eta=p(A^{(3)})/\sum_i p(A^{(3)})_i$ is a positive kernel vector.
+Also the first principal $4\times4$ determinant equals
+$p(A^{(3)})_1^2>0$, by expansion of that determinant, and hence
+the rank remains four.
+
+Finally, whenever a skew-symmetric $A$ has a strictly positive
+kernel vector $\eta$, any solution $\xi$ of~\eqref{eq:selection}
+must select every index. Indeed,
+$\eta^{\mathsf T}A\xi=-(A\eta)^{\mathsf T}\xi=0$;
+if some index were unselected, the left side would be a sum
+of nonpositive terms with at least one strictly negative term.
+Rank four then makes the normalized full-support vector unique.
+This proves all assertions, including uniqueness throughout
+the neighborhood.
+\end{proof}
+
+\paragraph{Nonnegative transition rates.}
+The example fits the algebraic positive-temperature and
+population-inverted-bath model of~\cite[Sec.\ V]{ske}.
+Put $T_1>0>T_2$, $J_1(x)=x^3$, and $J_2(x)=-x^3$.
+For $i\ne j$, set $\Delta=\varepsilon_i-\varepsilon_j$ and
+\[
+ R_{ij}= f_if_j\frac{\Delta^3}{e^{\Delta/T_1}-1}
+       -g_ig_j\frac{\Delta^3}{e^{\Delta/T_2}-1}.
+\]
+Both summands are positive: in the first fraction the numerator
+and denominator have the same sign, and in the second they
+have opposite signs before the displayed minus sign.
+The identity $(e^x-1)^{-1}-(1-e^{-x})^{-1}=-1$ gives
+$R_{ij}-R_{ji}=A^{(3)}_{ij}$; the diagonal may be set to zero.
+This is a construction of nonnegative transition rates, not a
+claim about an experimental realization of inverted reservoirs.
+
+\begin{corollary}\label{cor:exponents}
+There is an open interval of exponents containing $3$ for
+which the parameters in~\eqref{eq:parameters} have a unique
+five-mode selection. More generally, five-mode selection
+holds in a neighborhood of the displayed point in the joint
+space $(d,\varepsilon,F,G)$, with $d>0$.
+\end{corollary}
+\begin{proof}
+On the strictly ordered energy domain all off-diagonal energy
+differences are nonzero, so $|x|^d\sgn(x)$ is jointly continuous
+in $(d,x)$ there. Diagonal entries are identically zero.
+Thus the positive signed Pfaffian minors in the preceding
+proof remain positive in a joint neighborhood. The same
+kernel, rank and uniqueness arguments apply. Intersecting
+that neighborhood with the line of fixed energies and
+couplings gives the stated interval.
+\end{proof}
+
+\begin{corollary}\label{cor:extra}
+For every finite $M\geq5$, two cubic product-coupled baths
+admit a nonempty open set of positive coupling weights and
+ordered energies with exactly five selected modes and a unique
+normalized selection vector.
+\end{corollary}
+\begin{proof}
+Let $k=M-5$ and retain the original five energies. Choose distinct
+additional energies $E_1,\ldots,E_k>5$. For $t>0$, replace the
+first five coupling weights by $f_i/(1+2kt)$ and $g_i/(1+kt)$,
+and assign the new weights $2t/(1+2kt)$ and $t/(1+kt)$ to
+each extra level. Both weight vectors remain normalized.
+The old $5\times5$ principal matrix approaches $A^{(3)}$ as
+$t\downarrow0$, so its positive normalized Pfaffian kernel
+$\eta(t)$ and rank four persist. Extend $\eta(t)$ by zeros.
+For each new row, its drift divided by $t$ tends to
+\[
+ \sum_{j=1}^5(\varepsilon_j-E_a)^3(2f_j-g_j)\eta_j<0,
+\]
+because $2f-g=(4,2,5,5,5)/21>0$ and $E_a>5$.
+Finitely many strict inequalities therefore hold simultaneously
+for all sufficiently small $t>0$, giving exactly the old selected
+set by~\eqref{eq:selection}.
+If $x,y$ are any two selection vectors, skew symmetry gives
+$x^{\mathsf T}Ay=-(Ax)^{\mathsf T}y$; the left side is
+nonpositive and the right side nonnegative. Equality forces
+their supports to coincide. Rank four then gives normalized
+uniqueness. The five positive Pfaffians and the finitely many
+negative outside drifts persist in a neighborhood, proving openness.
+For $k=0$ this is Theorem~\ref{thm:example}.
+\end{proof}
+
+\section{A polynomial extension of the Ohmic bound}
+For $M_B\geq1$ baths with a common odd monomial exponent $q$, write
+\begin{equation}\label{eq:many}
+ A_{ij}=\sum_{b=1}^{M_B}\sigma_b h_i^{(b)}h_j^{(b)}
+                 (\varepsilon_j-\varepsilon_i)^q,
+ \qquad h_i^{(b)}>0,\quad \sigma_b\ne0.
+\end{equation}
+The signs of $\sigma_b$ include positive and inverted baths.
+Call a selected set nondegenerate if its principal matrix
+$A_S$ has a one-dimensional kernel. This holds whenever its
+normalized solution of~\eqref{eq:selection} is unique: any
+second kernel direction permits a small normalized perturbation
+of the strictly positive selected coordinates, preserving the
+finitely many strict outside inequalities.
+
+\begin{theorem}\label{thm:bound}
+For odd $q\geq1$, every nondegenerate selected set for
+\eqref{eq:many} satisfies
+\[
+ M_S\leq(q+1)M_B-1.
+\]
+For $q=1$ this recovers the Ohmic bound of Schnell, Ketzmerick
+and Eckardt~\cite[Sec.\ V, Eqs.\ (51)--(54)]{ske}.
+For two cubic baths it gives $M_S\leq7$.
+\end{theorem}
+\begin{proof}
+Set $n=M_S$ and $K=(q+1)M_B$. On the selected coordinates
+form the $n\times K$ matrix $V$ whose columns are
+$v_{b,r}=(h_i^{(b)}\varepsilon_i^r)_{i\in S}$,
+$0\leq r\leq q$. Let $C$ have entries
+\[
+ C_{rs}=\begin{cases}(-1)^r\binom qr,&r+s=q,\\0,&r+s\ne q.
+ \end{cases}
+\]
+The binomial expansion gives $A_S=VHV^{\mathsf T}$, where
+$H=\operatorname{diag}(\sigma_1C,\ldots,\sigma_{M_B}C)$.
+Each $C$ is invertible, since its anti-diagonal entries are
+nonzero; it is skew-symmetric because $q$ is odd.
+For the positive selected vector $\eta_S$, the vector
+$V^{\mathsf T}\eta_S$ is nonzero: its $(b,0)$ entry is
+$\sum_{i\in S}h_i^{(b)}\eta_i>0$.
+Thus $z=HV^{\mathsf T}\eta_S\ne0$, whereas $Vz=A_S\eta_S=0$.
+Consequently $\operatorname{rank}V\leq K-1$ and
+$\operatorname{rank}A_S\leq K-1$. A real skew-symmetric
+matrix has even rank. Since $K$ is even, its rank is at most
+$K-2$. Nondegeneracy gives $n-1=\operatorname{rank}A_S$,
+and hence $n\leq K-1$.
+\end{proof}
+
+The cubic counterexample and Theorem~\ref{thm:bound} replace
+the exponent-independent expectation by the valid
+exponent-dependent bound under the stated nondegeneracy
+hypothesis. Whether seven can be attained by two cubic baths
+is not decided by these arguments. Nondegeneracy matters:
+identical oppositely signed couplings give $A=0$, with arbitrary
+full-support positive kernel vectors in any dimension.
+
+\begin{corollary}\label{cor:sign}
+Suppose the energies are strictly ordered, $d>0$, all couplings
+are positive, and all baths have the same spectral sign in
+\eqref{eq:many}, with $(\varepsilon_j-\varepsilon_i)^q$
+replaced by $J_d(\varepsilon_j-\varepsilon_i)$.
+Then precisely one mode is selected: the lowest energy for
+positive signs and the highest for negative signs.
+\end{corollary}
+\begin{proof}
+For positive signs, every entry below the diagonal is negative.
+If two or more modes were selected, the row of the highest
+selected energy would have a strictly negative drift, contrary
+to~\eqref{eq:selection}. A singleton other than the lowest
+energy gives positive drift in a lower outside row, also a
+contradiction. The lowest singleton satisfies all inequalities.
+Reversing signs reverses the ordering. This includes the
+single-bath equilibrium case in~\cite[Sec.\ II, Eq.\ (12)]{ske}.
+\end{proof}
+
+\section{Coverage and verification}
+{\small
+\begin{longtable}{@{}p{.43\linewidth}p{.50\linewidth}@{}}
+\toprule
+Source item in arXiv:1802.04088v2 & Mathematical coverage\\
+\midrule
+Sec.\ V, p.\ 11, Eq.\ (55) and its surrounding paragraph,
+non-Ohmic expectation
+& Refuted-and-corrected: Theorem~\ref{thm:example} gives an
+explicit counterexample; Theorem~\ref{thm:bound} gives the
+odd-monomial replacement for nondegenerate selection.\\[4pt]
+Sec.\ V, Eqs.\ (51)--(54), Ohmic argument
+& Reproved; prior proof Schnell et al., 2018. Theorem~\ref{thm:bound}
+recovers $2M_B-1$ at $q=1$ under the explicit nondegeneracy
+hypothesis.\\[4pt]
+Sec.\ V, Eq.\ (55), odd monomials
+& Not posed; exponent-dependent bound proved in
+Theorem~\ref{thm:bound}. Its $q=3$ bound is seven, not three,
+for two baths.\\[4pt]
+Sec.\ V, Eq.\ (55); Schnell (2019), Sec.\ 4.4, p.\ 80,
+Eq.\ (4.54), repeated non-Ohmic expectation
+& Refuted by the same five-mode example. Corollaries~\ref{cor:exponents}
+and~\ref{cor:extra} give exponent neighborhoods and every
+finite ambient dimension $M\geq5$.\\[4pt]
+Sec.\ II, Eq.\ (11), selection and odd cardinality
+& Exactly satisfied; full support is uniquely selected and has
+  odd cardinality five.\\[4pt]
+Sec.\ II, Eq.\ (12), single-bath equilibrium selection
+& Reproved; prior proof Schnell et al., 2018.
+Corollary~\ref{cor:sign} also proves the same-sign multi-bath
+extension (not posed in this form).\\[4pt]
+Knebel et al.\ (2015), Methods, Eq.\ (19)
+& Prior proof cited: signed-Pfaffian kernel method.
+Equation~\eqref{eq:pfaffian} spells out its five-mode case.\\[4pt]
+Sec.\ III A--B, continuum criteria and prefactor near Fig.\ 5;
+Sec.\ IV A, random-rate distribution; Sec.\ IV B and Appendix,
+kicked-rotor correlations; Sec.\ VI, interacting and photonic systems
+& Not covered by this finite product-coupling construction.\\
+\bottomrule
+\end{longtable}}
+
+The pinned Lean file
+\href{https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean}{\texttt{BoseSelectionCubicTwoBathRefutation.lean}}
+contains the declaration \texttt{result} in the namespace
+\begin{quote}\small\ttfamily
+D5.S3.StatisticalMechanics.\\
+BoseSelectionCubicTwoBathRefutation
+\end{quote}
+Its statement is the negation of \texttt{claim}, which asserts
+that the violating set has empty interior for every $d>0$ and
+every finite dimension. Its proof exhibits a nonempty open
+set at $d=3$, $M=5$, with normalized positive coupling
+parameters and at least four selected modes (in fact all five).
+The definitions use coordinate-sum normalization
+\href{https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/Geometry/FiniteCoordinateTruncation.lean}{\texttt{FiniteCoordinateTruncation.normalize}}
+and the signed power
+\href{https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/Analytic/SeriesInequalities/StampachWaclawekExpansionRefutation.lean}{\texttt{StampachWaclawekExpansionRefutation.spow}};
+on nonzero real inputs the latter is $x|x|^{d-1}=J_d(x)$,
+and its value at zero is zero.
+Theorem~\ref{thm:example} above also gives a written proof of this
+five-mode construction. Uniqueness, nonnegative rates,
+Corollaries~\ref{cor:exponents}, \ref{cor:extra}, \ref{cor:sign}
+and Theorem~\ref{thm:bound} have written proofs; these additional
+statements are not the scope of the linked declaration.
+The accompanying \texttt{verify.py} checks the displayed matrix,
+kernel, signed Pfaffian values and principal determinant by
+exact rational arithmetic. It checks the five polynomial
+kernel identities by coefficient cancellation, rational
+six-, seven- and eight-level examples with five selected modes,
+and binomial matrix factorizations at $q=1,3,5$.
+
+\begin{thebibliography}{9}\small
+\setlength{\itemsep}{3pt}
+\bibitem{ske}
+A. Schnell, R. Ketzmerick and A. Eckardt,
+\emph{On the number of Bose-selected modes in driven-dissipative
+ideal Bose gases}, Phys.\ Rev.\ E \textbf{97}, 032136 (2018),
+\href{https://doi.org/10.1103/PhysRevE.97.032136}{doi:10.1103/PhysRevE.97.032136};
+\href{https://arxiv.org/abs/1802.04088v2}{arXiv:1802.04088v2}.
+The posing locator used here is in the arXiv version, Sec.\ V,
+p.\ 11, Eq.\ (55) and the surrounding paragraph.
+\bibitem{schnell}
+A. Schnell, \emph{Dissipative State Engineering in Quantum
+Many-Body Systems}, doctoral thesis, Technische Universit\"at
+Dresden (2019), Sec.\ 4.4, p.\ 80, Eq.\ (4.54),
+\href{https://d-nb.info/1226942288/34}{German National Library full text}.
+\bibitem{knebel}
+J. Knebel, M. F. Weber, T. Kr\"uger and E. Frey,
+\emph{Evolutionary games of condensates in coupled birth-death
+processes}, Nat.\ Commun.\ \textbf{6}, 6977 (2015),
+\href{https://doi.org/10.1038/ncomms7977}{doi:10.1038/ncomms7977};
+\href{https://arxiv.org/abs/1504.07816v1}{arXiv:1504.07816v1},
+Methods, Eq.\ (19).
+\bibitem{geiger}
+P. M. Geiger, J. Knebel and E. Frey,
+\emph{Topologically robust zero-sum games and Pfaffian orientation:
+How network topology determines the long-time dynamics of the
+antisymmetric Lotka--Volterra equation},
+Phys.\ Rev.\ E \textbf{98}, 062316 (2018),
+\href{https://doi.org/10.1103/PhysRevE.98.062316}{doi:10.1103/PhysRevE.98.062316};
+\href{https://arxiv.org/abs/1806.07339}{arXiv:1806.07339}.
+\bibitem{petiziol}
+F. Petiziol and A. Eckardt,
+\emph{Controlling nonequilibrium Bose-Einstein condensation with
+engineered environments}, Phys.\ Rev.\ A \textbf{110}, L021701 (2024),
+\href{https://doi.org/10.1103/PhysRevA.110.L021701}{doi:10.1103/PhysRevA.110.L021701};
+\href{https://arxiv.org/abs/2311.02170}{arXiv:2311.02170}.
+\end{thebibliography}
+\medskip
+\noindent\small\textcopyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.
+\end{document}

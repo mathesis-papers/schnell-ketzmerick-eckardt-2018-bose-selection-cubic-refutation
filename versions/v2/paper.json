@@ -1,0 +1,62 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 89571,
+      "matches_public": null,
+      "path": "paper.pdf",
+      "public_sha256": null,
+      "sha256": "3c814ec140126cd3bfa2bbf4bc756981ef1c5b710a4a90a7bfb87e1855aa6d8c"
+    },
+    "source": {
+      "bytes": 15474,
+      "matches_public": null,
+      "path": "source.archive",
+      "public_sha256": null,
+      "sha256": "8a5ea19cd907a9e55437adca23b0ec438de543cf3a5d0a545f9b960286d69a1d"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "For the non-Ohmic expectation M_S <= 2 M_B - 1 of Schnell, Ketzmerick and Eckardt (2018, arXiv:1802.04088v2, Sec. V, p. 11, Eq. (55) and the surrounding paragraph), we give a cubic counterexample and extend their Ohmic bound to odd monomial spectra. Two baths with J(x) = x^3 have five Bose-selected modes. The normalized coupling weights are (5,4,4,4,4)/21 and (6,6,3,3,3)/21 at energies (1,2,3,4,5), and the selected occupation fractions are (14,56,21,8,1)/100. Positive signed Pfaffian minors show that this selection is unique and persists on an open set of parameters, including spectral exponents near three. Five selected modes persist after adding any finite number of sufficiently weakly coupled higher levels. For odd q, we prove M_S <= (q+1) M_B - 1 when J(x) = x^q and the selected principal matrix has a one-dimensional kernel; q=1 recovers the source's Ohmic bound, while q=3 gives seven as an upper bound for two baths under this hypothesis.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "6ffa76e4424ce4c0d1048e56afb0724762ed8285",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "url": "/api/v1/collected-papers/schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-14T14:46:12.994743803Z",
+    "record": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
+    "repository_name": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
+    "source": {
+      "url": "/api/v1/collected-papers/schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation/files/source?version=2"
+    },
+    "title": "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-14T14:46:12.994743803Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation"
+  }
+}

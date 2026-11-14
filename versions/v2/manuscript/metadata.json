@@ -1,0 +1,32 @@
+{
+  "id": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
+  "revision": 2,
+  "problem_ids": ["schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation"],
+  "topic": "The non-Ohmic Bose-selection expectation in arXiv:1802.04088v2, Section V, page 11, equation (55) and its surrounding paragraph",
+  "title": "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "For the non-Ohmic expectation M_S <= 2 M_B - 1 of Schnell, Ketzmerick and Eckardt (2018, arXiv:1802.04088v2, Sec. V, p. 11, Eq. (55) and the surrounding paragraph), we give a cubic counterexample and extend their Ohmic bound to odd monomial spectra. Two baths with J(x) = x^3 have five Bose-selected modes. The normalized coupling weights are (5,4,4,4,4)/21 and (6,6,3,3,3)/21 at energies (1,2,3,4,5), and the selected occupation fractions are (14,56,21,8,1)/100. Positive signed Pfaffian minors show that this selection is unique and persists on an open set of parameters, including spectral exponents near three. Five selected modes persist after adding any finite number of sufficiently weakly coupled higher levels. For odd q, we prove M_S <= (q+1) M_B - 1 when J(x) = x^q and the selected principal matrix has a one-dimensional kernel; q=1 recovers the source's Ohmic bound, while q=3 gives seven as an upper bound for two baths under this hypothesis.",
+  "summary": "An open family of two cubic baths selects exactly five modes in every finite ambient dimension M >= 5. A written proof gives the replacement bound M_S <= (q+1) M_B - 1 for common odd monomial spectra and nondegenerate selection, extending the Ohmic bound of Schnell, Ketzmerick and Eckardt (2018).",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/6ffa76e4424ce4c0d1048e56afb0724762ed8285/D5/S3/StatisticalMechanics/BoseSelectionCubicTwoBathRefutation.lean",
+  "posing_source": {"url": "https://arxiv.org/abs/1802.04088v2", "locator": "Section V, page 11, equation (55) and its surrounding paragraph"},
+  "coverage": [
+    {"statement": "Non-Ohmic expectation M_S <= 2 M_B - 1", "status": "refuted-and-corrected", "scope": "Five selected modes for two cubic baths; the odd-monomial replacement bound assumes a one-dimensional selected kernel"},
+    {"statement": "Ohmic bound M_S <= 2 M_B - 1", "status": "reproved; prior proof Schnell, Ketzmerick and Eckardt (2018)", "scope": "The q=1 case of the written polynomial bound, with nondegeneracy explicit"},
+    {"statement": "Odd-monomial bound M_S <= (q+1) M_B - 1", "status": "not posed; proved", "scope": "M_B >= 1, positive couplings, nonzero signed bath strengths, common positive odd integer exponent q, one-dimensional selected kernel"},
+    {"statement": "Five selected modes in any ambient dimension M >= 5", "status": "not posed; proved", "scope": "Sufficiently weakly coupled higher levels, with strict outside drifts and a nonempty open parameter set"},
+    {"statement": "Single-bath equilibrium selection", "status": "reproved; prior proof Schnell, Ketzmerick and Eckardt (2018)", "scope": "The lowest-energy mode for positive spectral sign; a written corollary extends to multiple baths with the same sign"},
+    {"statement": "Uniqueness, positive rates and nearby-exponent stability", "status": "proved", "scope": "Written proofs"},
+    {"statement": "Signed-Pfaffian kernel method", "status": "prior proof cited", "scope": "Knebel, Weber, Krüger and Frey (2015), Methods, equation (19)"},
+    {"statement": "Continuum prefactor, random-rate distribution, kicked-rotor correlations, interactions and photonic questions", "status": "not covered", "scope": "These models are not the finite product-coupling family"}
+  ],
+  "verification": {
+    "lean_declaration": "D5.S3.StatisticalMechanics.BoseSelectionCubicTwoBathRefutation.result",
+    "lean_scope": "Negation of the all-exponent empty-interior claim, using an open violating set at d=3, M=5; the construction uses the full selected set",
+    "finite_checks": "Exact rational matrix, positive normalized kernel, signed Pfaffians, principal determinant, five polynomial kernel identities, higher-level examples in dimensions six through eight and binomial factorizations at exponents one, three and five",
+    "written_proofs": "Open set, uniqueness, positive rates, exponent neighborhood, arbitrary finite higher-level extensions, odd-monomial bound and same-sign-bath selection"
+  }
+}

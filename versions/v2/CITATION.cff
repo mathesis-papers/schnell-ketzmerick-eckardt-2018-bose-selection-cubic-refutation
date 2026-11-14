@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-14"
+version: "2"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation?version=2"
+license: "CC-BY-4.0"

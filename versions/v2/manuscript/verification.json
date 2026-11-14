@@ -1,0 +1,152 @@
+{
+  "arithmetic": "exact rational and integer polynomial coefficients",
+  "coupling_weights": {
+    "f": [
+      "5/21",
+      "4/21",
+      "4/21",
+      "4/21",
+      "4/21"
+    ],
+    "g": [
+      "2/7",
+      "2/7",
+      "1/7",
+      "1/7",
+      "1/7"
+    ]
+  },
+  "integer_matrix": [
+    [
+      0,
+      -16,
+      16,
+      54,
+      128
+    ],
+    [
+      16,
+      0,
+      -2,
+      -16,
+      -54
+    ],
+    [
+      -16,
+      2,
+      0,
+      7,
+      56
+    ],
+    [
+      -54,
+      16,
+      -7,
+      0,
+      7
+    ],
+    [
+      -128,
+      54,
+      -56,
+      -7,
+      0
+    ]
+  ],
+  "matrix_scale": "1/441",
+  "occupation_fractions": [
+    "7/50",
+    "14/25",
+    "21/100",
+    "2/25",
+    "1/100"
+  ],
+  "kernel_residual": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "signed_pfaffians_integer_matrix": [
+    504,
+    2016,
+    756,
+    288,
+    36
+  ],
+  "principal_minor_determinant": 254016,
+  "matrix_rank": 4,
+  "polynomial_kernel_identities": 5,
+  "higher_level_checks": [
+    {
+      "dimension": 6,
+      "added_weight_parameter": "1/1000",
+      "selected_modes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "outside_drifts": [
+        "-717567920000/87058559842079"
+      ]
+    },
+    {
+      "dimension": 7,
+      "added_weight_parameter": "1/1000",
+      "selected_modes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "outside_drifts": [
+        "-235820000/28640611011",
+        "-3229250000/200484277077"
+      ]
+    },
+    {
+      "dimension": 8,
+      "added_weight_parameter": "1/1000",
+      "selected_modes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "outside_drifts": [
+        "-708655280000/86151895970399",
+        "-197929000000/12307413710057",
+        "-345098526000/12307413710057"
+      ]
+    }
+  ],
+  "monomial_factorizations": [
+    {
+      "exponent": 1,
+      "bath_count": 2,
+      "feature_columns": 4,
+      "entry_identities": 25,
+      "factorization": "A = V H V^T"
+    },
+    {
+      "exponent": 3,
+      "bath_count": 2,
+      "feature_columns": 8,
+      "entry_identities": 25,
+      "factorization": "A = V H V^T"
+    },
+    {
+      "exponent": 5,
+      "bath_count": 2,
+      "feature_columns": 12,
+      "entry_identities": 25,
+      "factorization": "A = V H V^T"
+    }
+  ],
+  "checks": "pass"
+}
