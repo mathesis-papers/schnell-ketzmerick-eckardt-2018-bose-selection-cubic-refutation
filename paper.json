@@ -2,16 +2,16 @@
   "files": {
     "pdf": {
       "bytes": 89571,
-      "matches_public": null,
+      "matches_public": true,
       "path": "paper.pdf",
-      "public_sha256": null,
+      "public_sha256": "3c814ec140126cd3bfa2bbf4bc756981ef1c5b710a4a90a7bfb87e1855aa6d8c",
       "sha256": "3c814ec140126cd3bfa2bbf4bc756981ef1c5b710a4a90a7bfb87e1855aa6d8c"
     },
     "source": {
       "bytes": 15474,
-      "matches_public": null,
+      "matches_public": true,
       "path": "source.archive",
-      "public_sha256": null,
+      "public_sha256": "8a5ea19cd907a9e55437adca23b0ec438de543cf3a5d0a545f9b960286d69a1d",
       "sha256": "8a5ea19cd907a9e55437adca23b0ec438de543cf3a5d0a545f9b960286d69a1d"
     }
   },
@@ -38,6 +38,8 @@
     "license": "CC-BY-4.0",
     "msc": [],
     "pdf": {
+      "bytes": 89571,
+      "sha256": "3c814ec140126cd3bfa2bbf4bc756981ef1c5b710a4a90a7bfb87e1855aa6d8c",
       "url": "/api/v1/collected-papers/schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation/files/pdf?version=2"
     },
     "previous_version": null,
@@ -46,6 +48,8 @@
     "record": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
     "repository_name": "schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation",
     "source": {
+      "bytes": 15474,
+      "sha256": "8a5ea19cd907a9e55437adca23b0ec438de543cf3a5d0a545f9b960286d69a1d",
       "url": "/api/v1/collected-papers/schnell-ketzmerick-eckardt-2018-bose-selection-cubic-refutation/files/source?version=2"
     },
     "title": "A cubic counterexample at Schnell–Ketzmerick–Eckardt (2018, Sec. V, p. 11, Eq. (55)), and an extension of their Ohmic bound",
